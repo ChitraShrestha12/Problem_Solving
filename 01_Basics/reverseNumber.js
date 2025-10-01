@@ -1,0 +1,12 @@
+let prompt = require('prompt-sync')();
+let numDigits = parseInt(prompt("Enter a digits: "))
+function reverseNum(num){
+    let rev =0
+    while(num!=0){
+        let rem = num%10
+        rev = rev *10+rem
+        num = Math.trunc(num/10)
+    }
+    return rev
+}
+console.log("Reverse number of given number is:",reverseNum(numDigits));
