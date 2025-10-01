@@ -1,7 +1,6 @@
 let arr = [4, 7, 1, 9, 2];
-let i = 0,
-  j = arr.length - 1;
-
+let i = 0
+let j = arr.length - 1;
 while (i != j) {
   let temp = arr[i];
   arr[i] = arr[j];
@@ -10,4 +9,3 @@ while (i != j) {
   j--;
 }
 console.log(arr);
-
